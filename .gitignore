@@ -4,6 +4,12 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### local mvn repo ###
+# by running below command
+# mvn dependency:go-offline -Dmaven.repo.local=./repo package
+repo/
+repo.tar.gz
+
 ### STS ###
 .apt_generated
 .classpath
