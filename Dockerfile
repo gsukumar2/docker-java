@@ -8,7 +8,7 @@ RUN mvn package
 
 # Step : final docker image
 FROM openjdk:11-jre-slim
-EXPOSE 8080
+EXPOSE 8089
 COPY --from=BUILD /build/target /opt/target
 WORKDIR /opt/target
 CMD ["java", "-jar", "hellojavadocker.jar"]
